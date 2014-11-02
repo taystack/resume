@@ -1,0 +1,91 @@
+
+// Hijacked from http://stackoverflow.com/questions/12757323/how-to-make-an-atom-like-animation-using-css3-animations
+#atom {
+  width:80px;
+  height: 80px;
+  -webkit-perspective: 1000;
+  position: relative;
+}
+
+#nucleus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  background: $resume-font-color;
+}
+
+.orbit {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border: 2px solid #ccc;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(80deg) rotateY(20deg);
+}
+
+#atom .orbit:nth-child(2) {
+  -webkit-transform: rotateX(80deg) rotateY(70deg)
+}
+#atom .orbit:nth-child(3) {
+  -webkit-transform: rotateX(80deg) rotateY(-20deg)
+}
+#atom .orbit:nth-child(4) {
+  -webkit-transform: rotateX(80deg) rotateY(-50deg)
+}
+
+#atom .orbit:nth-child(2) .path, #atom .orbit:nth-child(2) .electron {-webkit-animation-delay: -1.0s}
+#atom .orbit:nth-child(3) .path, #atom .orbit:nth-child(3) .electron {-webkit-animation-delay: -1.5s}
+#atom .orbit:nth-child(4) .path, #atom .orbit:nth-child(4) .electron {-webkit-animation-delay: -0.5s}
+
+.path {
+  width:80px;
+  height: 80px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-name: pathRotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.electron {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background: $resume-font-color;
+  -webkit-animation-name: electronFix;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pathRotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  } to {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes electronFix {
+  from {
+    -webkit-transform: rotateX(90deg) rotateY(0deg);
+  } to {
+    -webkit-transform: rotateX(90deg) rotateY(-360deg);
+  }
+}

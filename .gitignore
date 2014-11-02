@@ -1,0 +1,8 @@
+# Our node modules
+node_modules/
+
+# The temp folder
+temp/
+
+# Sass cache
+.sass-cache/
