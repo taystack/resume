@@ -1,6 +1,9 @@
 # Our node modules
 node_modules/
 
+#Our bower...
+bower_components/
+
 # The temp folder
 temp/
 
