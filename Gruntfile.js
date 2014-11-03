@@ -33,6 +33,21 @@ module.exports = function(grunt) {
         src: "" + baseDirectory + "/src/index.haml"
       }
     },
+    // jade: {
+    //   compile: {
+    //     options: {
+    //       client: false,
+    //       pretty: true
+    //     },
+    //     files: [ {
+    //       cwd: "" + baseDirectory + "/src/templates",
+    //       src: "**/*.jade",
+    //       dest: "" + baseDirectory + "/temp/templates",
+    //       expand: true,
+    //       ext: ".html"
+    //     }]
+    //   }
+    // },
     sass: {
       compile: {
         dest: "" + baseDirectory + "/temp/styles/main.css",
@@ -64,6 +79,13 @@ module.exports = function(grunt) {
           interrupt: true
         }
       },
+      // jade: {
+      //   files: 'src/templates/**/*.jade',
+      //   tasks: 'jade:compile',
+      //   options: {
+      //     interrupt: true
+      //   }
+      // },
       compass: {
         files: 'src/styles/**/*.scss',
         tasks: 'sass:compile',
@@ -76,6 +98,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-haml');
+  // grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-symlink');
 
@@ -86,6 +109,7 @@ module.exports = function(grunt) {
       'symlink:scripts',
       'symlink:jquery',
       'haml',
+      // 'jade',
       'sass',
       'watch'
     ]

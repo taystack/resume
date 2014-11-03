@@ -3,6 +3,7 @@
   "author": "Taylor Stackpole",
   "version": "0.1.0",
   "dependencies": {
-    "jquery": "2.0.x"
+    "jquery": "2.0.x",
+    "jquery-smooth-scroll": "1.5.x"
   }
 }

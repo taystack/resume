@@ -11,6 +11,7 @@
 
     %link{href: '../styles/main.css', rel: 'stylesheet'}/
     %script{src: '../vendor/jquery/jquery.min.js'}/
+    %script{src: 'jquery.nicescroll.js'}/
     %script{src: '../scripts/index.js'}/
 
   %body
@@ -29,7 +30,7 @@
 
       .right
         %h2.title Bread and butter?
-        %p Easily HTML5, JavaScript, and CSS3. I create, contribute to, and maintain web applications with them. These tools have allowed me to breathe life into creative designs from creative designers. I'm a stickler for standards and always refer to the World Wide Web Consortium (W3C) for standards and conventional practices. I believe my value truly exists with my adaptability to different requirements and application architectures.
+        %p Easily HTML5, JavaScript, and CSS3. I create, contribute to, and maintain web applications with them. These tools have allowed me to breathe life into creative designs from creative designers. I'm a stickler for standards and always refer to the World Wide Web Consortium (W3C) for standards and conventional practices in web development. That said, I am not opposed to a last minute hack before a deployment schedule. Or Easter Eggs. Grinning for either.
 
     .news-container
       .news-column
@@ -45,11 +46,11 @@
       .news-column
         .news-image
           %img.sass{src: "../images/css3.png"}
-        %p I heart this stuff. This is where the lines merge between art and math, and the fastest way for a browser to understand what the heck it's supposed to show you. With JavaScript, HTML5, and CSS3, I can make just about anything you can think of. This website was created with Sass using grunt-contrib-sass for compilation.
+        %p I heart this stuff. This is where the lines merge between art and math, and the fastest way for a browser to understand what the heck it's supposed to show you. With JavaScript, HTML5, and CSS3, I can make just about anything you can think of. This website was created with Sass using grunt-contrib-sass for compilation. In fact, if your browser doesn't support flex, this whole site looks broken!
 
   .break
 
-  .experience-container
+  .experience-header
     .left
       %img.brain{src: "../images/brain.png"}
 
@@ -57,12 +58,39 @@
       %h2.title Experience?
       %p Aside from the&#32;
         %i Bread and Butter,&#32;
-        %span I have found myself using and creating all types of tools; Frameworks, revision, testing, open source modules, and the like. Here are some things I have used in a professional environment:
+        %span I have found myself using and creating all types of tools; Frameworks, revision, testing, open source modules, and the like. Here are some things I have used in a professional, workplace environment:
 
   .experience-container
     %ul.exp-list
 
-      %li.exp-item.thing
+      %li.exp-item
+        .container{data-hmm: "javascript"}
+          .top
+            %img.exp-image{src: "../images/javascript.png"}
+
+          .bottom
+            %strong.title Javascript
+            %p.text
+
+      %li.exp-item
+        .container{data-hmm: "html5"}
+          .top
+            %img.exp-image{src: "../images/html5.png"}
+
+          .bottom
+            %strong.title HTML5
+            %p.text
+
+      %li.exp-item
+        .container{data-hmm: "css3"}
+          .top
+            %img.exp-image{src: "../images/css3.png"}
+
+          .bottom
+            %strong.title CSS3
+            %p.text
+
+      %li.exp-item
         .container{data-hmm: "python"}
           .top
             %img.exp-image{src: "../images/python.png"}
@@ -90,7 +118,7 @@
             %p.text
 
       %li.exp-item
-        .container{data-hmm: "coffeescript"}
+        .container{data-hmm: "coffee"}
           .top
             %img.exp-image{src: "../images/coffee.png"}
 
@@ -99,7 +127,7 @@
             %p.text
 
       %li.exp-item
-        .container{data-hmm: "livescript"}
+        .container{data-hmm: "live"}
           .top
             %img.exp-image{src: "../images/live.png"}
 
@@ -278,9 +306,22 @@
             %strong.title Agile
             %p.text
 
+    .exp-detail
+      .detail-container
+        .title-container
+          %img.detail-img{src: ""}
+          %strong.detail-title
+
+        .description-container
+          %p.detail-bits
+
+        .link-container
+          %strong.title Related topics:
+          %ul.detail-links-list
+
   .break
 
-  .achievement-container
+  .achievement-header
     .left
       %img.achieve{src: "../images/achieve.png"}
 
@@ -324,7 +365,7 @@
 
   .break
 
-  .education-container
+  .education-header
     .left
       %img.education{src: "../images/grad.png"}
 

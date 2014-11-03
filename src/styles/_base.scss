@@ -53,7 +53,13 @@ body, body * {
 
 .achievement-container,
 .experience-container,
-.education-container,
+.education-container {
+  @include site-container;
+}
+
+.achievement-header,
+.experience-header,
+.education-header,
 .bread-butter {
   display: flex;
   align-items: center;
@@ -81,13 +87,14 @@ body, body * {
     width: 300px;
     height: 201px;
   }
-
-  img.achievement {
-    margin-top: 20px;
+  img.achieve {
     height: 200px;
-    width: 200px;
+    width: auto;
+    margin-top: 40px;
   }
-
+  img.brain {
+    margin-top: 20px;
+  }
   img.education {
     opacity: .7;
   }
@@ -95,6 +102,7 @@ body, body * {
 
 .experience-container {
   margin-top: 30px;
+  display: flex;
 }
 
 ul.degrees {
@@ -144,6 +152,14 @@ li.degree {
     padding: 0px;
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    flex-grow: 1;
+
+    transition: all, linear, 400ms;
+
+    &.curious {
+      width: 50%;
+    }
   }
 
   li.exp-item {
@@ -183,31 +199,56 @@ li.degree {
     }
 
     &.active {
-      // flex-basis: 100%;
-      // align-items: flex-start;
-      // justify-contents: flex-start;
-      // height: 300px;
-      // order: -1;
-
       .container {
         border-color: goldenrod;
         box-shadow: 0 7px 25px -4px goldenrod;
-        // height: 280px;
-        // width: 100%;
-        // margin: 20px;
       }
     }
+  }
+
+}
+
+.exp-detail {
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  // flex-grow: 0;
+  flex-shrink: 1;
+  margin-top: 40px;
+  padding-left: 20px;
+
+  transition: all, linear, 400ms;
+
+
+  &.curious {
+    width: 100%;
+    opacity: 1;
+    flex-grow: 1;
+
+  }
+
+  .detail-bits {
+    margin-left: 10px;
+    text-align: justify;
+  }
+
+  .detail-links-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .detail-img,
+  .detail-link-item img {
+    margin: 10px;
+    height: 60px;
+    width: auto;
   }
 }
 
 .achievement-container {
-
-  img.achieve {
-    height: 200px;
-    width: auto;
-    margin-top: 40px;
-  }
-
   img.spur,
   img.parisoma {
     border-radius: 2px;
@@ -245,6 +286,11 @@ li.achievement {
 
   .not-image {
     flex-grow: 1;
+  }
+
+  img.mvp {
+    height: 60px;
+    width: auto;
   }
 
 }

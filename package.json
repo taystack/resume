@@ -10,5 +10,8 @@
     "grunt-regarde": "0.1.x",
     "grunt-contrib-watch": "0.5.x",
     "grunt-contrib-symlink": "0.2.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-jade": "^0.13.0"
   }
 }
