@@ -139,6 +139,11 @@ var EXP = {
     links: ["javascript", "html5", "css3", "git", "linux"],
     bits: "This is important to write out."
   },
+  "less": {
+    title: "less",
+    links: ["css3", "scss", "html5", "git"],
+    bits: "This is important to write out."
+  },
   "linux": {
     title: "Linux Operating System",
     links: ["git", "node", "grunt"],
@@ -225,6 +230,12 @@ var _isCurrent = function(name) {
 }
 
 var _makeDetails = function(name) {
+
+  // $("#exp-top").smoothScroll();
+  $.smoothScroll({
+    // scrollElement: $('#exp-top'),
+    scrollTarget: "#exp-top"
+  });
 
   if (_isCurrent(name)) {
     // Go away.
