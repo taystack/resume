@@ -9,15 +9,15 @@
     %meta{description: 'My resume', name: 'Resume'}/
     %meta{content: 'width=device-width', name: 'viewport'}/
 
-    %link{href: 'styles/main.css', rel: 'stylesheet'}/
-    %script{src: 'vendor/jquery/jquery.min.js'}/
-    %script{src: 'scripts/smooth.js'}/
-    %script{src: 'scripts/index.js'}/
+    %link{href: 'temp/styles/main.css', rel: 'stylesheet'}/
+    %script{src: 'temp/vendor/jquery/jquery.min.js'}/
+    %script{src: 'temp/scripts/smooth.js'}/
+    %script{src: 'temp/scripts/index.js'}/
 
   %body
 
     .title-container
-      %img.family{src: "images/papa_bear.JPG"}
+      %img.family{src: "temp/images/papa_bear.JPG"}
       %p.muted hi, I'm
       %h1 Taylor Stackpole
       %p.muted and I like to code
@@ -26,7 +26,7 @@
 
     .bread-butter
       .left
-        %img.bread{src: "images/bread_butter.png"}
+        %img.bread{src: "temp/images/bread_butter.png"}
 
       .right
         %h2.title Bread and butter?
@@ -35,24 +35,24 @@
     .news-container
       .news-column
         .news-image
-          %img.sass{src: "images/html5.png"}
+          %img.sass{src: "temp/images/html5.png"}
         %p HTML can be very nice to use when cleaned up with an abstraction layer or other sweet templating engine. I spend most of my time inside Haml templates but have come to appreciate other markup languages like, Jade, and Jinja which also allow a variety of logic from the application architecture's native language. This website was created with Haml using grunt-haml for compilation.
 
       .news-column
         .news-image
-          %img.javascript{src: "images/javascript.png"}
+          %img.javascript{src: "temp/images/javascript.png"}
         %p I have coded in javascript or some other abstraction layer more than any other coding / scripting language. Learning JavaScript (es5) came to me by way of learning  CoffeeScript and LiveScript. My first raw JavaScript web application was written well after my involvement with multiple production-level CoffeeScript / LiveScript web apps. The most recent applications I have worked on are utilizing the bleeding-edge JavaScript (es6) syntax. This specific website was written using plain ol' JavaScript (es5).
 
       .news-column
         .news-image
-          %img.sass{src: "images/css3.png"}
+          %img.sass{src: "temp/images/css3.png"}
         %p I heart this stuff. This is where the lines merge between art and math, and the fastest way for a browser to understand what the heck it's supposed to show you. With JavaScript, HTML5, and CSS3, I can make just about anything you can think of. This website was created with Sass using grunt-contrib-sass for compilation. In fact, if your browser doesn't support flex, this whole site looks broken!
 
   .break
 
   .experience-header
     .left
-      %img.brain{src: "images/brain.png"}
+      %img.brain{src: "temp/images/brain.png"}
 
     .right
       %h2.title Experience?
@@ -67,7 +67,7 @@
       %li.exp-item
         .container{data-hmm: "javascript"}
           .top
-            %img.exp-image{src: "images/javascript.png"}
+            %img.exp-image{src: "temp/images/javascript.png"}
 
           .bottom
             %strong.title Javascript
@@ -76,7 +76,7 @@
       %li.exp-item
         .container{data-hmm: "html5"}
           .top
-            %img.exp-image{src: "images/html5.png"}
+            %img.exp-image{src: "temp/images/html5.png"}
 
           .bottom
             %strong.title HTML5
@@ -85,7 +85,7 @@
       %li.exp-item
         .container{data-hmm: "css3"}
           .top
-            %img.exp-image{src: "images/css3.png"}
+            %img.exp-image{src: "temp/images/css3.png"}
 
           .bottom
             %strong.title CSS3
@@ -94,7 +94,7 @@
       %li.exp-item
         .container{data-hmm: "python"}
           .top
-            %img.exp-image{src: "images/python.png"}
+            %img.exp-image{src: "temp/images/python.png"}
 
           .bottom
             %strong.title Python
@@ -103,7 +103,7 @@
       %li.exp-item
         .container{data-hmm: "backbone"}
           .top
-            %img.exp-image{src: "images/backbone.png"}
+            %img.exp-image{src: "temp/images/backbone.png"}
 
           .bottom
             %strong.title Backbone.js
@@ -112,7 +112,7 @@
       %li.exp-item
         .container{data-hmm: "chaplin"}
           .top
-            %img.exp-image{src: "images/chaplin.png"}
+            %img.exp-image{src: "temp/images/chaplin.png"}
 
           .bottom
             %strong.title Chaplin.js
@@ -121,7 +121,7 @@
       %li.exp-item
         .container{data-hmm: "coffee"}
           .top
-            %img.exp-image{src: "images/coffee.png"}
+            %img.exp-image{src: "temp/images/coffee.png"}
 
           .bottom
             %strong.title CoffeeScript
@@ -130,7 +130,7 @@
       %li.exp-item
         .container{data-hmm: "live"}
           .top
-            %img.exp-image{src: "images/live.png"}
+            %img.exp-image{src: "temp/images/live.png"}
 
           .bottom
             %strong.title LiveScript
@@ -139,7 +139,7 @@
       %li.exp-item
         .container{data-hmm: "haml"}
           .top
-            %img.exp-image{src: "images/haml.png"}
+            %img.exp-image{src: "temp/images/haml.png"}
 
           .bottom
             %strong.title Haml
@@ -148,7 +148,7 @@
       %li.exp-item
         .container{data-hmm: "jade"}
           .top
-            %img.exp-image{src: "images/jade.png"}
+            %img.exp-image{src: "temp/images/jade.png"}
 
           .bottom
             %strong.title Jade
@@ -157,7 +157,7 @@
       %li.exp-item
         .container{data-hmm: "ruby"}
           .top
-            %img.exp-image{src: "images/ruby.png"}
+            %img.exp-image{src: "temp/images/ruby.png"}
 
           .bottom
             %strong.title Ruby
@@ -166,7 +166,7 @@
       %li.exp-item
         .container{data-hmm: "jinja"}
           .top
-            %img.exp-image{src: "images/jinja.png"}
+            %img.exp-image{src: "temp/images/jinja.png"}
 
           .bottom
             %strong.title Jinja
@@ -175,7 +175,7 @@
       %li.exp-item
         .container{data-hmm: "flask"}
           .top
-            %img.exp-image{src: "images/flask.png"}
+            %img.exp-image{src: "temp/images/flask.png"}
 
           .bottom
             %strong.title Flask
@@ -184,7 +184,7 @@
       %li.exp-item
         .container{data-hmm: "sqlalchemy"}
           .top
-            %img.exp-image{src: "images/sqlalchemy.png"}
+            %img.exp-image{src: "temp/images/sqlalchemy.png"}
 
           .bottom
             %strong.title SQLAlchemy
@@ -193,7 +193,7 @@
       %li.exp-item
         .container{data-hmm: "django"}
           .top
-            %img.exp-image{src: "images/django.png"}
+            %img.exp-image{src: "temp/images/django.png"}
 
           .bottom
             %strong.title Django
@@ -202,7 +202,7 @@
       %li.exp-item
         .container{data-hmm: "jquery"}
           .top
-            %img.exp-image{src: "images/jquery.png"}
+            %img.exp-image{src: "temp/images/jquery.png"}
 
           .bottom
             %strong.title jQuery
@@ -211,7 +211,7 @@
       %li.exp-item
         .container{data-hmm: "grunt"}
           .top
-            %img.exp-image{src: "images/grunt.png"}
+            %img.exp-image{src: "temp/images/grunt.png"}
 
           .bottom
             %strong.title Grunt
@@ -220,7 +220,7 @@
       %li.exp-item
         .container{data-hmm: "bower"}
           .top
-            %img.exp-image{src: "images/bower.png"}
+            %img.exp-image{src: "temp/images/bower.png"}
 
           .bottom
             %strong.title Bower
@@ -229,7 +229,7 @@
       %li.exp-item
         .container{data-hmm: "npm"}
           .top
-            %img.exp-image{src: "images/npm.png"}
+            %img.exp-image{src: "temp/images/npm.png"}
 
           .bottom
             %strong.title NPM
@@ -238,7 +238,7 @@
       %li.exp-item
         .container{data-hmm: "scss"}
           .top
-            %img.exp-image{src: "images/scss.png"}
+            %img.exp-image{src: "temp/images/scss.png"}
 
           .bottom
             %strong.title Sass
@@ -247,7 +247,7 @@
       %li.exp-item
         .container{data-hmm: "less"}
           .top
-            %img.exp-image{src: "images/less.png"}
+            %img.exp-image{src: "temp/images/less.png"}
 
           .bottom
             %strong.title Less
@@ -256,7 +256,7 @@
       %li.exp-item
         .container{data-hmm: "rest"}
           .top
-            %img.exp-image{src: "images/rest.png"}
+            %img.exp-image{src: "temp/images/rest.png"}
 
           .bottom
             %strong.title REST API
@@ -265,7 +265,7 @@
       %li.exp-item
         .container{data-hmm: "node"}
           .top
-            %img.exp-image{src: "images/node.png"}
+            %img.exp-image{src: "temp/images/node.png"}
 
           .bottom
             %strong.title Node.js
@@ -274,7 +274,7 @@
       %li.exp-item
         .container{data-hmm: "git"}
           .top
-            %img.exp-image{src: "images/git.png"}
+            %img.exp-image{src: "temp/images/git.png"}
 
           .bottom
             %strong.title Git
@@ -283,7 +283,7 @@
       %li.exp-item
         .container{data-hmm: "linux"}
           .top
-            %img.exp-image{src: "images/linux.png"}
+            %img.exp-image{src: "temp/images/linux.png"}
 
           .bottom
             %strong.title Linux OS
@@ -292,7 +292,7 @@
       %li.exp-item
         .container{data-hmm: "sublime"}
           .top
-            %img.exp-image{src: "images/sublime.png"}
+            %img.exp-image{src: "temp/images/sublime.png"}
 
           .bottom
             %strong.title Sublime Text
@@ -301,7 +301,7 @@
       %li.exp-item
         .container{data-hmm: "agile"}
           .top
-            %img.exp-image{src: "images/agile.png"}
+            %img.exp-image{src: "temp/images/agile.png"}
 
           .bottom
             %strong.title Agile
@@ -324,7 +324,7 @@
 
   .achievement-header
     .left
-      %img.achieve{src: "images/achieve.png"}
+      %img.achieve{src: "temp/images/achieve.png"}
 
     .right
       %h2.title Work Related Achievements?
@@ -344,7 +344,7 @@
           %p With the prize came a complimentary stage pass to the 2013 TM Forum Digital Disruption event in San Jose, Ca. We were given a trophy on stage after a brief documentary of the hackathon event. It was a pretty cool life experience.
 
         .right.image-side
-          %img.parisoma{src: "images/parisoma.jpg"}
+          %img.parisoma{src: "temp/images/parisoma.jpg"}
 
       %li.achievement
         .left.not-image
@@ -354,7 +354,7 @@
             %span &#32;for the most creative use of the Mashery APIs.
 
         .right.image-side
-          %img.spur{src: "images/spur.jpg"}
+          %img.spur{src: "temp/images/spur.jpg"}
 
       %li.achievement
         .left.not-image
@@ -362,13 +362,13 @@
           %p I work hard to make an large impact on whatever project I have. This just felt good for my first year working here.
 
         .right.image-side
-          %img.mvp{src: "images/mvp.png"}
+          %img.mvp{src: "temp/images/mvp.png"}
 
   .break
 
   .education-header
     .left
-      %img.education{src: "images/grad.png"}
+      %img.education{src: "temp/images/grad.png"}
 
     .right
       %h2.title Education?
@@ -403,7 +403,7 @@
 
       %li.degree
         .left
-          %img.cpp{src: "images/cpp.png"}
+          %img.cpp{src: "temp/images/cpp.png"}
 
         .right
           %h4.title Associate in Science, Computer Information Science - Computer Programming: C++
@@ -411,7 +411,7 @@
 
       %li.degree
         .left
-          %img.java{src: "images/java.png"}
+          %img.java{src: "temp/images/java.png"}
 
         .right
           %h4.title Associate in Science, Computer Information Science - Computer Programming: Java
