@@ -69,7 +69,7 @@ var EXP = {
   },
   "coffee": {
     title: "CoffeeScript",
-    links: ["backbone", "chaplin", "sublime", "git", "javascript"],
+    links: ["backbone", "chaplin", "sublime", "git", "javascript", "traceur"],
     bits: "This is important to write out."
   },
   "javascript": {
