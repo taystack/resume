@@ -1,0 +1,316 @@
+body, body * {
+  color: #444;
+  font-family: "Courier New", Courier, monospace; }
+
+.title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+  .title-container h1 {
+    margin: 10px 0; }
+  .title-container .family {
+    border-radius: 200px;
+    height: 200px;
+    margin: 10px 0;
+    width: 200px; }
+
+.break {
+  border-bottom: 1px solid #aaa; }
+
+.news-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+  .news-container .news-column {
+    text-align: justify;
+    margin: 20px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0; }
+  .news-container .news-image {
+    display: flex;
+    justify-content: center; }
+    .news-container .news-image img {
+      height: 150px;
+      width: 150px; }
+
+.achievement-container,
+.experience-container,
+.education-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+
+.achievement-header,
+.experience-header,
+.education-header,
+.bread-butter {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+  .achievement-header > *,
+  .experience-header > *,
+  .education-header > *,
+  .bread-butter > * {
+    flex-basis: 500px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: justify; }
+  .achievement-header .left,
+  .experience-header .left,
+  .education-header .left,
+  .bread-butter .left {
+    text-align: center; }
+  .achievement-header .right p,
+  .experience-header .right p,
+  .education-header .right p,
+  .bread-butter .right p {
+    margin-left: 10px; }
+  .achievement-header img.bread,
+  .experience-header img.bread,
+  .education-header img.bread,
+  .bread-butter img.bread {
+    width: 300px;
+    height: 201px; }
+  .achievement-header img.achieve,
+  .experience-header img.achieve,
+  .education-header img.achieve,
+  .bread-butter img.achieve {
+    height: 200px;
+    width: auto;
+    margin-top: 40px; }
+  .achievement-header img.brain,
+  .experience-header img.brain,
+  .education-header img.brain,
+  .bread-butter img.brain {
+    margin-top: 20px; }
+  .achievement-header img.education,
+  .experience-header img.education,
+  .education-header img.education,
+  .bread-butter img.education {
+    opacity: .7; }
+
+.experience-container {
+  margin-top: 30px;
+  display: flex; }
+
+ul.degrees {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+
+li.degree {
+  margin: 10px 0;
+  display: flex; }
+  li.degree .right,
+  li.degree .left {
+    display: flex;
+    flex-basis: 100px; }
+  li.degree .left {
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center; }
+  li.degree .right {
+    flex-grow: 1;
+    margin-left: 10px;
+    justify-content: center;
+    flex-direction: column; }
+  li.degree .title {
+    margin-top: 5px; }
+  li.degree img.cpp {
+    opacity: .7; }
+
+.experience-container ul.exp-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-grow: 1;
+  transition: all, linear, 400ms; }
+  .experience-container ul.exp-list.curious {
+    width: 50%; }
+.experience-container li.exp-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 220px;
+  display: flex;
+  align-items: center;
+  transition: all, linear, 250ms;
+  position: relative; }
+  .experience-container li.exp-item .container {
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 7px 25px -4px #aaa;
+    border: 1px solid rgba(170, 170, 170, 0.5);
+    transition: all, linear, 250ms; }
+    .experience-container li.exp-item .container:hover {
+      border-color: #aaa; }
+    .experience-container li.exp-item .container img {
+      margin: 10px 0;
+      max-height: 60px;
+      max-width: auto; }
+  .experience-container li.exp-item.active .container {
+    border-color: goldenrod;
+    box-shadow: 0 7px 25px -4px goldenrod; }
+
+.exp-detail {
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  flex-shrink: 1;
+  margin-top: 40px;
+  padding-left: 20px;
+  transition: all, linear, 400ms; }
+  .exp-detail.curious {
+    width: 100%;
+    opacity: 1;
+    flex-grow: 1; }
+  .exp-detail .detail-bits {
+    margin-left: 10px;
+    text-align: justify; }
+  .exp-detail .detail-links-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap; }
+  .exp-detail .detail-img,
+  .exp-detail .detail-link-item img {
+    margin: 10px;
+    height: 60px;
+    width: auto; }
+
+.achievement-container img.spur,
+.achievement-container img.parisoma {
+  border-radius: 2px;
+  width: 300px;
+  height: auto; }
+
+ul.achievement-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+li.achievement {
+  display: flex;
+  margin: 40px 0; }
+  li.achievement > * {
+    flex-basis: 300px; }
+  li.achievement .left {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center; }
+  li.achievement .right.image-side {
+    text-align: center;
+    margin-left: 40px; }
+  li.achievement .not-image {
+    flex-grow: 1; }
+  li.achievement img.mvp {
+    height: 60px;
+    width: auto; }
+
+#atom {
+  width: 80px;
+  height: 80px;
+  -webkit-perspective: 1000;
+  position: relative; }
+
+#nucleus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  background: #444; }
+
+.orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border: 2px solid #ccc;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(80deg) rotateY(20deg); }
+
+#atom .orbit:nth-child(2) {
+  -webkit-transform: rotateX(80deg) rotateY(70deg); }
+
+#atom .orbit:nth-child(3) {
+  -webkit-transform: rotateX(80deg) rotateY(-20deg); }
+
+#atom .orbit:nth-child(4) {
+  -webkit-transform: rotateX(80deg) rotateY(-50deg); }
+
+#atom .orbit:nth-child(2) .path, #atom .orbit:nth-child(2) .electron {
+  -webkit-animation-delay: -1.0s; }
+
+#atom .orbit:nth-child(3) .path, #atom .orbit:nth-child(3) .electron {
+  -webkit-animation-delay: -1.5s; }
+
+#atom .orbit:nth-child(4) .path, #atom .orbit:nth-child(4) .electron {
+  -webkit-animation-delay: -0.5s; }
+
+.path {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-name: pathRotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; }
+
+.electron {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background: #444;
+  -webkit-animation-name: electronFix;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; }
+
+@-webkit-keyframes pathRotate {
+  from {
+    -webkit-transform: rotateZ(0deg); }
+  to {
+    -webkit-transform: rotateZ(360deg); } }
+@-webkit-keyframes electronFix {
+  from {
+    -webkit-transform: rotateX(90deg) rotateY(0deg); }
+  to {
+    -webkit-transform: rotateX(90deg) rotateY(-360deg); } }

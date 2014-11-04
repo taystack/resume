@@ -4,8 +4,5 @@ node_modules/
 #Our bower...
 bower_components/
 
-# The temp folder
-temp/
-
-# Sass cache
+#sass cache
 .sass-cache/
