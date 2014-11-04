@@ -59,7 +59,12 @@ var EXP = {
   },
   "chaplin": {
     title: "Chaplin.js Framework",
-    links: ["backbone", "javascript", "live", "coffee", "git"],
+    links: ["backbone", "javascript", "live", "coffee", "git", "traceur"],
+    bits: "This is important to write out."
+  },
+  "traceur": {
+    title: "Google ES Traceur",
+    links: ["backbone", "chaplin", "javascript", "live", "coffee", "git"],
     bits: "This is important to write out."
   },
   "coffee": {
@@ -190,7 +195,7 @@ var EXP = {
           "documented, BSD licensed framework and that makes developing " +
           "small web applications as easy as it can get."
   },
-}
+};
 
 var _isCurrent = function(name) {
   if ($(".exp-detail").prop("data-name") === name) {
@@ -210,7 +215,7 @@ var _isCurrent = function(name) {
 
       $(".detail-title").text(hash.title);
 
-      var src = "../images/" + name + ".png";
+      var src = "images/" + name + ".png";
       $(".detail-img").attr("src", src);
 
       $(".detail-bits").html(hash.bits);
@@ -218,7 +223,7 @@ var _isCurrent = function(name) {
       for (var _i = 0; _i < hash.links.length; _i++) {
         $(".detail-links-list").append(
             "<li class='detail-link-item'>" +
-            "<img title='" + EXP[hash.links[_i]].title + "' src='../images/" + hash.links[_i] + ".png' " +
+            "<img title='" + EXP[hash.links[_i]].title + "' src='images/" + hash.links[_i] + ".png' " +
             "data-name='" + hash.links[_i] + "'/>" +
             "</li>"
           );
@@ -227,7 +232,7 @@ var _isCurrent = function(name) {
 
     });
   }
-}
+};
 
 var _makeDetails = function(name) {
 
@@ -242,12 +247,12 @@ var _makeDetails = function(name) {
     return;
   }
 
-}
+};
 
 $(function() {
 
   $(".exp-item").on("click", function() {
-    var name = $(this).find(".container").attr("data-hmm")
+    var name = $(this).find(".container").attr("data-hmm");
     // $(".experience-header").slideUp();
     $(".exp-detail").addClass("curious");
     _makeDetails(name);

@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         }
       },
       index: {
-        dest: "" + baseDirectory + "/temp/index.html",
+        dest: "" + baseDirectory + "/index.html",
         src: "" + baseDirectory + "/src/index.haml"
       }
     },
