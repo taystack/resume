@@ -215,7 +215,7 @@ var _isCurrent = function(name) {
 
       $(".detail-title").text(hash.title);
 
-      var src = "images/" + name + ".png";
+      var src = "../images/" + name + ".png";
       $(".detail-img").attr("src", src);
 
       $(".detail-bits").html(hash.bits);
@@ -223,7 +223,7 @@ var _isCurrent = function(name) {
       for (var _i = 0; _i < hash.links.length; _i++) {
         $(".detail-links-list").append(
             "<li class='detail-link-item'>" +
-            "<img title='" + EXP[hash.links[_i]].title + "' src='images/" + hash.links[_i] + ".png' " +
+            "<img title='" + EXP[hash.links[_i]].title + "' src='../images/" + hash.links[_i] + ".png' " +
             "data-name='" + hash.links[_i] + "'/>" +
             "</li>"
           );
