@@ -265,7 +265,7 @@ li.degree {
       opacity: 0;
       visibility: hidden; }
   .exp-detail .detail-bits {
-    margin-left: 10px;
+    margin: 0 10px;
     text-align: justify; }
   .exp-detail .detail-links-list {
     margin: 0;
