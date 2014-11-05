@@ -56,7 +56,7 @@ var EXP = {
   },
   "git": {
     title: "Git Revision Tool",
-    links: ["python", "javascript", "css3", "html5", "linux", "sublime"],
+    links: ["python", "javascript", "css3", "html5", "bower", "linux", "sublime"],
     bits: "I have used Git for every project I have been a part of in my " +
           "professional career. I have a <a href='https://github.com/taystack" +
           "' target='_blank'>GitHub</a> account, in which I toss interesting " +
@@ -150,7 +150,16 @@ var EXP = {
           "math, and the fastest way for a browser to understand what the " +
           "heck it's supposed to show you. With JavaScript, HTML5, and CSS3, " +
           "I can make just about anything you can think of. This website was " +
-          "created with Sass using grunt-contrib-sass for compilation."
+          "created with Sass using grunt-contrib-sass for compilation. My " +
+          "favorite feature of CSS3 is flex-box. I use flex-box for the " +
+          "layout of this website since it is no longer in need of a " +
+          "<a href='http://caniuse.com/#feat=flexbox' target='_blank'>" +
+          "webkit</a> for the most current browsers. We don't like to count " +
+          "IE10. It's different from Win7 - Win8 - Win8.1. Windows? Hmm..." +
+          "Besides, > 65% of all browsers don't need a prefix and I don't " +
+          "have a client base for this website. And flex is, well, " +
+          "<a href='https://github.com/taystack/flexy', target='_blank'>" +
+          "flexy</a>."
   },
   "live": {
     title: "LiveScript",
@@ -192,16 +201,24 @@ var EXP = {
   "sqlalchemy": {
     title: "SQLAlchemy",
     links: ["python", "flask", "git", "rest", "django"],
-    bits: "This is important to write out."
+    bits: "SQLAlchemy plays very well with the Flask architecture for the  " +
+          "resource layer. My introduction to SQLAlchemy was with Flask" +
+          "app where I wrote API layers that mapped out to generic models " +
+          "for integration mapping between Enterprise level applications " +
+          "exposing a RESTful API."
   },
   "django": {
     title: "Django Python",
     links: ["python", "jinja", "flask", "git", "rest", "sqlalchemy"],
-    bits: "This is important to write out."
+    bits: "Django was my introduction to a RESTful backend architecture. Of " +
+          "course Django has a templating engine to offer, it is just not " +
+          "as useful as writing a frontend stack for it. I am mostly used " +
+          "to dealing with the model layer of a Django app and have built " +
+          "a couple test apps using a full Django / Chaplin.js stack"
   },
   "jquery": {
     title: "jQuery",
-    links: ["backbone", "chaplin", "javascript", "git", "rest", "html5", "css3"],
+    links: ["backbone", "chaplin", "javascript", "git", "rest", "html5", "css3", "bower"],
     bits: "There is much to say about this tool. " +
           "I've used jQuery in every web site / application I have ever spent " +
           "time on. I've used AJAX in Flask apps. I've used AJAX in " +
@@ -237,15 +254,15 @@ var EXP = {
   },
   "node": {
     title: "Node.js",
-    links: ["javascript", "html5", "css3", "git", "linux", "flask"],
-    bits: "I use node to run a web servers for any RESTful application's " +
+    links: ["javascript", "html5", "css3", "git", "linux", "flask", "bower"],
+    bits: "I use node to run a web server for any RESTful application's " +
           "frontend. I have used node to listen on ports exposed " +
           "by Flask applications to allow for serious backend / frontend " +
           "teams to focus on their own repos for project revision."
   },
   "linux": {
     title: "Linux Operating System",
-    links: ["git", "node", "grunt"],
+    links: ["git", "node", "grunt", "docker"],
     bits: "I heard once that if you are a designer and don't use a Mac, you " +
           "will get laughed at. Pretty much the same goes for developers. " +
           "If you don't develop on a Linux box, you will get laughed " +
@@ -294,6 +311,19 @@ var EXP = {
           "documented, BSD licensed framework and that makes developing " +
           "small web applications as easy as it can get. Flask is also very " +
           "useful for exposing a RESTful backend to a more elegant SPA " +
+          "like Chaplin.js for a very powerful, very complicated stack. If " +
+          "I had to make a quick RESTful application over night, Flask " +
+          "would be there to comfort me."
+  },
+  "docker": {
+    title: "Docker",
+    links: ["linux"],
+    bits: "Docker is the only place where I have seen a man run the most " +
+          "infamous Linux command: `rm -rf /` and still be able to recover " +
+          "the shell with the `docker run <so and so container>`. " +
+          "Docker was incorporated into the start-up I am working for when " +
+          "the sys-admin decided to take antoher job. We needed a way to " +
+
           "like Chaplin.js for a very powerful, very complicated stack. If " +
           "I had to make a quick RESTful application over night, Flask " +
           "would be there to comfort me."
@@ -352,8 +382,8 @@ var _makeDetails = function(name) {
 $(function() {
 
   $(".container").on("click", function() {
-    ga("send", "event", "button", "click", "exp-tile");
     var name = $(this).attr("data-hmm");
+    ga("send", "event", "button", "click", "exp-tile" + name);
     $(".exp-detail").addClass("curious");
     _makeDetails(name);
     switch ($(this).find(".container").hasClass("active")) {
@@ -367,14 +397,15 @@ $(function() {
   });
 
   $(".detail-links-list").on("click", ".detail-link-item > img", function(event) {
-    ga("send", "event", "button", "click", "exp-link");
     var name = $(this).attr("data-name");
+    ga("send", "event", "button", "click", "exp-link" + name);
     $(".container").removeClass("active");
     $("[data-hmm=" + name + "]").addClass("active");
     _makeDetails(name);
   });
 
   $(".expand-container").on("click", function() {
+    ga("send", "event", "button", "click", "exp-larger");
     $(".exp-detail").addClass("ness");
     $.smoothScroll({scrollTarget: "#exp-top"});
   });
