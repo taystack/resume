@@ -302,7 +302,7 @@ var EXP = {
           "exposing a RESTful API."
   },
   "traceur": {
-    title: "Google ES Traceur",
+    title: "Google ES Traceur Compiler",
     links: ["backbone", "chaplin", "javascript", "live", "coffee", "git"],
     bits: "This is like looking into the future. There are some proposed " +
           "changes to the JavaScript language and this compiler allows " +
@@ -310,7 +310,8 @@ var EXP = {
           "I like to consider the Google ES6 Compiler an abstraction layer " +
           "on JavaScript until ES6 is common place in browser compatibility. " +
           "Of all of the JavaScript abstraction layers, " +
-          "I have the least amount of experience with Traceur. This " +
+          "I have used the Traceur Compiler with Chaplin.js since importing " +
+          "was a one line thing. This " +
           "abstraction layer defines `bleeding edge`."
   },
   "sublime": {

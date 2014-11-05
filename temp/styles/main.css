@@ -3,10 +3,14 @@ body, body * {
   font-family: "Courier New", Courier, monospace; }
 
 .title-container {
+  -webkit-align-items: center;
   align-items: center;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   padding-bottom: 10px;
+  -webkit-justify-content: center;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -24,6 +28,7 @@ body, body * {
   border-bottom: 1px solid #aaaaaa; }
 
 .news-container {
+  display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
@@ -37,7 +42,9 @@ body, body * {
     flex-grow: 1;
     flex-shrink: 0; }
   .news-container .news-image {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center; }
     .news-container .news-image img {
       height: 150px;
@@ -55,7 +62,9 @@ body, body * {
 .experience-header,
 .education-header,
 .bread-butter {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 0 auto;
@@ -108,24 +117,32 @@ ul.degrees {
   list-style-type: none;
   margin-left: 0;
   padding: 0;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column; }
 
 li.degree {
   margin: 10px 0;
+  display: -webkit-flex;
   display: flex; }
   li.degree .right,
   li.degree .left {
+    display: -webkit-flex;
     display: flex;
     flex-basis: 100px; }
   li.degree .left {
     flex-shrink: 1;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center; }
   li.degree .right {
     flex-grow: 1;
     margin-left: 10px;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-direction: column;
     flex-direction: column; }
   li.degree .title {
     margin-top: 5px; }
@@ -134,6 +151,7 @@ li.degree {
 
 .experience-container {
   margin-top: 30px;
+  display: -webkit-flex;
   display: flex;
   flex-flow: row wrap-reverse; }
   .experience-container ul.exp-list {
@@ -141,6 +159,7 @@ li.degree {
     margin-left: 0;
     flex-basis: 440px;
     padding: 0;
+    display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -153,7 +172,9 @@ li.degree {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 220px;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     transition: all, linear, 250ms;
     position: relative; }
@@ -162,9 +183,13 @@ li.degree {
       margin: 20px auto;
       width: 200px;
       height: 120px;
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-direction: column;
       flex-direction: column;
+      -webkit-align-items: center;
       align-items: center;
+      -webkit-justify-content: space-between;
       justify-content: space-between;
       background: white;
       box-shadow: 0 7px 25px -4px #aaaaaa;
@@ -189,11 +214,14 @@ li.degree {
   padding-left: 20px;
   transition: all, linear, 1000ms; }
   .exp-detail .expand-container {
+    -webkit-align-items: center;
     align-items: center;
     border-radius: 6px;
     border: 1px solid #cccccc;
+    display: -webkit-flex;
     display: flex;
     height: 30px;
+    -webkit-justify-content: center;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
@@ -222,6 +250,7 @@ li.degree {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: -webkit-flex;
     display: flex;
     flex-flow: row wrap; }
   .exp-detail .detail-img,
@@ -242,14 +271,17 @@ ul.achievement-list {
   padding: 0; }
 
 li.achievement {
+  display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
   margin: 40px 0; }
   li.achievement > * {
     flex-basis: 300px; }
   li.achievement .left {
+    -webkit-flex-direction: column;
     flex-direction: column;
     text-align: justify;
+    -webkit-justify-content: center;
     justify-content: center; }
   li.achievement .right.image-side {
     width: 100%;
