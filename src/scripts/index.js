@@ -100,13 +100,13 @@ var EXP = {
     links: ["linux"],
     bits: "Docker is the only place where I have seen a man run the most " +
           "infamous Linux command: `rm -rf /` and still be able to recover " +
-          "the shell with the `docker run <so and so container>`. " +
+          "the shell with the `docker run so_and_so_container.*`. " +
           "Docker was incorporated into the start-up I am working for when " +
           "the sys-admin decided to take antoher job. We needed a way to " +
-
-          "like Chaplin.js for a very powerful, very complicated stack. If " +
-          "I had to make a quick RESTful application over night, Flask " +
-          "would be there to comfort me."
+          "maintain an inexpensive web infrastructure without compromising " +
+          "the build process or stack. I am familiar with the process of " +
+          "running / saving / pulling / pushing Docker containers and the " +
+          "build process was done by the architect."
   },
   "flask": {
     title: "Flask Framework",
@@ -183,9 +183,9 @@ var EXP = {
           "specific website was written using plain ol' JavaScript (es5)."
   },
   "jinja": {
-    title: "Jinja Templates",
+    title: "Jinja 2 Templates",
     links: ["python", "flask", "css3", "git", "html5", "django"],
-    bits: "I totally dig the power of Jinja templates. I have used these " +
+    bits: "I totally dig the power of Jinja 2 templates. I have used these " +
           "templates for a couple of Flask applications so far. " +
           "I love the macros available and things that are DRY are handsome."
   },
