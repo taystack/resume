@@ -30,6 +30,7 @@ body, body * {
 .news-container {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -38,8 +39,11 @@ body, body * {
   .news-container .news-column {
     text-align: justify;
     margin: 20px;
+    -webkit-flex-basis: 200px;
     flex-basis: 200px;
+    -webkit-flex-grow: 1;
     flex-grow: 1;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0; }
   .news-container .news-image {
     display: -webkit-flex;
@@ -66,6 +70,7 @@ body, body * {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -75,8 +80,11 @@ body, body * {
   .experience-header > *,
   .education-header > *,
   .bread-butter > * {
+    -webkit-flex-basis: 300px;
     flex-basis: 300px;
+    -webkit-flex-grow: 1;
     flex-grow: 1;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     text-align: justify; }
   .achievement-header .left,
@@ -130,14 +138,17 @@ li.degree {
   li.degree .left {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-basis: 100px;
     flex-basis: 100px; }
   li.degree .left {
+    -webkit-flex-shrink: 1;
     flex-shrink: 1;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center; }
   li.degree .right {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     margin-left: 10px;
     -webkit-justify-content: center;
@@ -153,24 +164,32 @@ li.degree {
   margin-top: 30px;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap-reverse;
   flex-flow: row wrap-reverse; }
   .experience-container ul.exp-list {
     list-style-type: none;
     margin-left: 0;
+    -webkit-flex-basis: 440px;
     flex-basis: 440px;
     padding: 0;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     width: 100%;
+    -webkit-flex-grow: 1;
     flex-grow: 1;
+    -webkit-flex-shrink: 1;
     flex-shrink: 1;
     transition: all, linear, 400ms; }
     .experience-container ul.exp-list.curious {
       width: 50%; }
   .experience-container li.exp-item {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
+    -webkit-flex-basis: 220px;
     flex-basis: 220px;
     display: -webkit-flex;
     display: flex;
@@ -209,6 +228,7 @@ li.degree {
   width: 0px;
   opacity: 0;
   overflow: hidden;
+  -webkit-flex-shrink: 1;
   flex-shrink: 1;
   margin-top: 40px;
   padding-left: 20px;
@@ -233,6 +253,7 @@ li.degree {
   .exp-detail.curious {
     width: 400px;
     opacity: 1;
+    -webkit-flex-grow: 1;
     flex-grow: 1; }
   .exp-detail:hover .expand-container {
     opacity: 1;
@@ -252,6 +273,7 @@ li.degree {
     list-style-type: none;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap; }
   .exp-detail .detail-img,
   .exp-detail .detail-link-item img {
@@ -273,9 +295,11 @@ ul.achievement-list {
 li.achievement {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: 40px 0; }
   li.achievement > * {
+    -webkit-flex-basis: 300px;
     flex-basis: 300px; }
   li.achievement .left {
     -webkit-flex-direction: column;
@@ -287,8 +311,10 @@ li.achievement {
     width: 100%;
     text-align: center;
     margin-left: 40px;
+    -webkit-flex-grow: 1;
     flex-grow: 1; }
   li.achievement .not-image {
+    -webkit-flex-grow: 1;
     flex-grow: 1; }
   li.achievement img.mvp {
     height: 60px;
