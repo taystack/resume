@@ -67,11 +67,18 @@ body, body * {
   @include site-container;
 
   > * {
-    flex-basis: $resume-site-width / 2;
+    flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 0;
     text-align: justify;
   }
+
+  // @media screen and(max-width: 900px) {
+  //   > * {
+  //     flex-basis: 100%;
+  //     flex-shrink: 1;
+  //   }
+  // }
 
 
   .left {
@@ -98,11 +105,6 @@ body, body * {
   img.education {
     opacity: .7;
   }
-}
-
-.experience-container {
-  margin-top: 30px;
-  display: flex;
 }
 
 ul.degrees {
@@ -146,14 +148,20 @@ li.degree {
 }
 
 .experience-container {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap-reverse;
+
   ul.exp-list {
     list-style-type: none;
     margin-left: 0;
-    padding: 0px;
+    flex-basis: 440px;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
     flex-grow: 1;
+    flex-shrink: 1;
 
     transition: all, linear, 400ms;
 
@@ -188,7 +196,6 @@ li.degree {
 
       &:hover {
         border-color: $resume-gray;
-        // box-shadow: 0 7px 15px -6px $resume-gray;
       }
 
       img {
@@ -221,7 +228,7 @@ li.degree {
 
 
   &.curious {
-    width: 100%;
+    width: 400px;
     opacity: 1;
     flex-grow: 1;
 
@@ -266,6 +273,7 @@ ul.achievement-list {
 
 li.achievement {
   display: flex;
+  flex-flow: row wrap;
   margin: 40px 0;
 
   > * {
@@ -273,15 +281,16 @@ li.achievement {
   }
 
   .left {
-    display: flex;
     flex-direction: column;
     text-align: justify;
     justify-content: center;
   }
 
   .right.image-side {
+    width: 100%;
     text-align: center;
     margin-left: 40px;
+    flex-grow: 1;
   }
 
   .not-image {
