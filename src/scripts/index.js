@@ -38,19 +38,27 @@ var EXP = {
   },
   "scss": {
     title: "Syntactically Awesome Stylesheets (sass)",
-    links: ["jinja", "haml", "git", "jade"],
-    bits: "This is important to write out."
+    links: ["jinja", "haml", "git", "jade", "grunt"],
+    bits: "I have written every single stylesheet in my life using sass " +
+          "with Grunt.js for compilation / watching files. I would rather " +
+          "cut off my own foot that write inline CSS. I utilize the power " +
+          "of mixins, inheritance, and even the logic avenues of Sass to " +
+          "accomplish a DRY appearance in the development of stylesheets."
   },
   "git": {
     title: "Git Revision Tool",
     links: ["python", "javascript", "css3", "html5", "linux", "sublime"],
     bits: "I have used Git for every project I have been a part of in my " +
           "professional career. I have a <a href='https://github.com/taystack" +
-          "'>GitHub</a> account, in which I toss interesting projects, but " +
+          "' target='_blank'>GitHub</a> account, in which I toss interesting " +
+          "projects, but " +
           "have also used Atlassian products like Bit Bucket and Stash " +
           "because of their integration value towards Jira, our workflow " +
           "manager. Every software tool I have used involved Git, which is " +
-          "why you see the git icon on almost every tab."
+          "why you see the git icon on almost every tab. This webpage is " +
+          "hosted for free on <i>GitHub Pages.</i> and you can find the " +
+          "source <a href='https://github.com/taystack/resume/tree/gh-pages'" +
+          "target='_blank'>here<a>"
   },
   "rest": {
     title: "Representative State Transfer (REST)",
