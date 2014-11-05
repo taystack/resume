@@ -8,6 +8,7 @@
 @mixin site-container($width: $resume-site-width) {
 
   margin: 0 auto;
+  margin-bottom: 30px;
   max-width: $width;
   width: 100%;
 

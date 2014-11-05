@@ -86,7 +86,7 @@ body, body * {
   }
 
   .right p {
-    margin-left: 10px;
+    margin: 0 10px;
   }
 
 
@@ -203,10 +203,8 @@ li.degree {
         max-height: 60px;
         max-width: auto;
       }
-    }
 
-    &.active {
-      .container {
+      &.active {
         border-color: goldenrod;
         box-shadow: 0 7px 25px -4px goldenrod;
       }
@@ -219,19 +217,50 @@ li.degree {
   width: 0px;
   opacity: 0;
   overflow: hidden;
-  // flex-grow: 0;
   flex-shrink: 1;
   margin-top: 40px;
   padding-left: 20px;
 
-  transition: all, linear, 400ms;
+  transition: all, linear, 1000ms;
 
+  .expand-container {
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid $resume-light-gray;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    width: 100px;
+
+    transition: all, linear, 250ms;
+
+    .text {
+      color: $resume-light-gray;
+      cursor: default;
+    }
+  }
 
   &.curious {
     width: 400px;
     opacity: 1;
     flex-grow: 1;
+  }
 
+  &:hover .expand-container {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.ness {
+    width: 100%;
+
+    .expand-container {
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
   .detail-bits {

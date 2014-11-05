@@ -32,22 +32,6 @@
         %h2.title Bread and butter?
         %p Easily HTML5, JavaScript, and CSS3. I create, contribute to, and maintain web applications with them. These tools have allowed me to breathe life into creative designs from creative designers. I'm a stickler for standards and always refer to the World Wide Web Consortium (W3C) for standards and conventional practices in web development. That said, I am not opposed to a last minute hack before a deployment schedule. Or Easter Eggs. Grinning for either.
 
-    .news-container
-      .news-column
-        .news-image
-          %img.sass{src: "src/images/html5-large.png"}
-        %p HTML can be very nice to use when cleaned up with an abstraction layer or other sweet templating engine. I spend most of my time inside Haml templates but have come to appreciate other markup languages like, Jade, and Jinja which also allow a variety of logic from the application architecture's native language. This website was created with Haml using grunt-haml for compilation.
-
-      .news-column
-        .news-image
-          %img.javascript{src: "src/images/javascript-large.png"}
-        %p I have coded in javascript or some other abstraction layer more than any other coding / scripting language. Learning JavaScript (es5) came to me by way of learning  CoffeeScript and LiveScript. My first raw JavaScript web application was written well after my involvement with multiple production-level CoffeeScript / LiveScript web apps. The most recent applications I have worked on are utilizing the bleeding-edge JavaScript (es6) syntax. This specific website was written using plain ol' JavaScript (es5).
-
-      .news-column
-        .news-image
-          %img.sass{src: "src/images/css3-large.png"}
-        %p I heart this stuff. This is where the lines merge between art and math, and the fastest way for a browser to understand what the heck it's supposed to show you. With JavaScript, HTML5, and CSS3, I can make just about anything you can think of. This website was created with Sass using grunt-contrib-sass for compilation. In fact, if your browser doesn't support flex, this whole site looks broken!
-
   .break
 
   .experience-header
@@ -55,7 +39,7 @@
       %img.brain{src: "src/images/brain.png"}
 
     .right
-      %h2.title Experience?
+      %h2.title Experience
       %p Aside from the&#32;
         %i Bread and Butter,&#32;
         %span I have found myself using and creating all types of tools; Frameworks, revision, testing, open source modules, and the like. Here are some things I have used in a professional, workplace environment:
@@ -134,6 +118,15 @@
 
           .bottom
             %strong.title LiveScript
+            %p.text
+
+      %li.exp-item
+        .container{data-hmm: "traceur"}
+          .top
+            %img.exp-image{src: "src/images/traceur.png"}
+
+          .bottom
+            %strong.title ES6 Traceur
             %p.text
 
       %li.exp-item
@@ -245,15 +238,6 @@
             %p.text
 
       %li.exp-item
-        .container{data-hmm: "less"}
-          .top
-            %img.exp-image{src: "src/images/less.png"}
-
-          .bottom
-            %strong.title Less
-            %p.text
-
-      %li.exp-item
         .container{data-hmm: "rest"}
           .top
             %img.exp-image{src: "src/images/rest.png"}
@@ -310,6 +294,9 @@
     .exp-detail
       .detail-container
         .title-container
+          .expand-container
+            %span.text Expand
+
           %img.detail-img{src: ""}
           %strong.detail-title
 
