@@ -26,6 +26,13 @@ body, body * {
 
 .break {
   border-bottom: 1px solid #aaaaaa; }
+  .break.break-site {
+    border-color: #cccccc;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 0; }
 
 .news-container {
   display: -webkit-flex;
@@ -319,6 +326,27 @@ li.achievement {
   li.achievement img.mvp {
     height: 60px;
     width: auto; }
+
+#resume {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  width: 100%; }
+  #resume .title-container {
+    text-align: center; }
+  #resume h1,
+  #resume h3 {
+    color: #0c0042; }
+  #resume a {
+    -webkit-transition: all, linear, 250ms;
+    transition: all, linear, 250ms; }
+  #resume a:hover {
+    color: #486cec; }
+  #resume .sm {
+    margin: 5px 0; }
+  #resume .r-c :not(strong) {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 #atom {
   width: 80px;

@@ -1,0 +1,31 @@
+#resume {
+  @include site-container;
+
+  .title-container {
+    text-align: center;
+  }
+
+  h1,
+  h3 {
+    color: $resume-dark-blue;
+  }
+
+  a {
+    -webkit-transition: all, linear, 250ms;
+    transition: all, linear, 250ms;
+  }
+
+  a:hover {
+    color: $resume-blue;
+  }
+
+  .sm {
+    margin: 5px 0;
+  }
+
+  .r-c :not(strong) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}

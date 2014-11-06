@@ -28,6 +28,12 @@ body, body * {
 
 .break {
   border-bottom: 1px solid $resume-gray;
+
+  &.break-site {
+    border-color: $resume-light-gray;
+    @include site-container;
+    margin-bottom: 0;
+  }
 }
 
 .news-container {
