@@ -213,12 +213,12 @@ var EXP = {
           "If you don't develop on a Linux box, you will get laughed " +
           "at. The number of dev tools readily available for Linux machines " +
           "is amazing. " +
-          "Getting the same developing environments running on Windows or Mac" +
+          "Getting the same developing environments running on Windows or Mac " +
           "is possible, but it's janky and the edge cases are silly. Since " +
           "professional web application development, I use windows strictly " +
           "for testing IE or gaming. Since " +
           "<a href='https://saucelabs.com/docs/code-examples' target='_blank'" +
-          ">Sauce Labs</a> I haven't seen a need to use more than one " +
+          ">Sauce Labs</a>, I haven't seen a need to use more than one " +
           "machine for developing."
   },
   "npm": {
