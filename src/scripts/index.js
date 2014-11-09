@@ -264,7 +264,7 @@ var EXP = {
   "rest": {
     title: "Representational State Transfer (REST)",
     links: ["python", "flask", "sqlalchemy", "git", "django", "chaplin", "backbone"],
-    bits: "My introduction to API's was during my interview at Concordus " +
+    bits: "My introduction to APIs was during my interview at Concordus " +
           "Applications. I have dealt with REST API's from numerous " +
           "enterprise companies. I have also contributed to a Python API " +
           "layer for Basecamp's HighriseHQ. I am confident that I can " +
