@@ -10,6 +10,9 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
+  "dependencies": {
+    "react-scripts": "^3.3.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -9,3 +9,5 @@ temp/
 
 # Sass cache
 .sass-cache/
+
+yarn-error.log

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/resume/static/js/main.a25a9200.chunk.js",
+    "main.js.map": "/resume/static/js/main.a25a9200.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.6921eb3d.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.6921eb3d.js.map",
+    "index.html": "/resume/index.html",
+    "precache-manifest.cba2248b45300f540e2fb93507a007e7.js": "/resume/precache-manifest.cba2248b45300f540e2fb93507a007e7.js",
+    "service-worker.js": "/resume/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6921eb3d.js",
+    "static/js/main.a25a9200.chunk.js"
+  ]
+}

@@ -1,4 +1,4 @@
-resume
+Resume
 ======
 
-A resume-type website found here: http://taystack.github.io/resume/
+This just links to my [website](https://taystack.github.io/website) now.
