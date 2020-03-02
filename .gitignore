@@ -1,8 +1,0 @@
-# Our node modules
-node_modules/
-
-#Our bower...
-bower_components/
-
-#sass cache
-.sass-cache/
